@@ -1,0 +1,49 @@
+body{
+   background-color: aliceblue; 
+}
+
+@media screen and (max-width: 700px) {
+    #divmain{
+        display: grid;
+        grid-template-rows: 15vh 75vh 75vh 15vh;
+        grid-template-columns:100%;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: 
+        'hd'
+        'divBild'
+        'se'
+        'ft';
+    }
+    header{
+        grid-area: hd;
+        text-align: center;
+        color: aliceblue;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+        
+    }
+    #divBild{
+        grid-area: divBild;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        border-radius: 7px;
+    }
+    #se{
+        grid-area: se;
+        text-align: center;
+        background-color: darkkhaki;
+        border-radius: 7px;
+    }
+    #ft{
+        grid-area: ft;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+    }  
+}@media screen and (min-width: 700px) {
+
+
+}

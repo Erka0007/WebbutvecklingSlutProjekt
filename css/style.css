@@ -1,8 +1,121 @@
-body{
-   background-color: aliceblue; 
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.white{
+
+    color: aliceblue;
+}
+
+.link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 5rem;
+
 }
 
 @media screen and (max-width: 700px) {
+    #divmain{
+        display: grid;
+        grid-template-rows: 15vh 75vh 75vh 40vh 15vh;
+        grid-template-columns:100%;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: 
+        'hd'
+        'divBild'
+        'se'
+        'divBild2'
+        'ft';
+    }
+    #divmain2{
+        display: grid;
+        grid-template-rows: 15vh 5vh 90vh 5vh 90vh 5vh 90vh 5vh 15vh;
+        grid-template-columns:5% 90% 5%;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: 
+        'hd hd hd'
+        '.. .. ..'
+        '.. se ..' 
+        '.. .. ..'
+        '.. se2 ..' 
+        '.. .. ..'
+        '.. se3 ..' 
+        '.. .. ..'
+        'ft ft ft';
+    }
+    header{
+        grid-area: hd;
+        text-align: center;
+        color: aliceblue;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+        
+    }
+    
+
+     .menu-button i.material-icons{
+        display: none;
+       }
+    #divBild{
+        grid-area: divBild;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        border-radius: 7px;
+    }
+    #divBild2{
+        grid-area: divBild2;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        border-radius: 7px;
+    }
+    #se{
+        grid-area: se;
+        text-align: center;
+        background-color: darkkhaki;
+        border-radius: 7px;
+    }
+    #se2{
+        grid-area: se2;
+        text-align: center;
+        background-color: darkkhaki;
+        border-radius: 7px;
+    }
+    #se3{
+        grid-area: se3;
+        text-align: center;
+        background-color: darkkhaki;
+        border-radius: 7px;
+    }
+    #ft{
+        grid-area: ft;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+    }  
+}@media screen and (min-width: 700px) {
+
     #divmain{
         display: grid;
         grid-template-rows: 15vh 75vh 75vh 15vh;
@@ -23,11 +136,14 @@ body{
         border-radius: 7px;
         
     }
+    .menu-button i.material-icons{
+        display: block;
+     }
     #divBild{
         grid-area: divBild;
         text-align: center;
         font-size: 3.5rem;
-        background-color: white;
+        background-image: url("../img/Skogen.png");
         border-radius: 7px;
     }
     #se{
@@ -43,7 +159,4 @@ body{
         background-color: darkolivegreen;
         border-radius: 7px;
     }  
-}@media screen and (min-width: 700px) {
-
-
 }

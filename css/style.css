@@ -1,7 +1,12 @@
+body{
+    margin: 0%;
+}
 
 .menu-button{
     cursor: pointer;
     display: inline;
+    margin-right: 35%;
+    margin-left: 5%;
 }
 
 .menu-button i.material-icons{
@@ -28,20 +33,20 @@
     color: aliceblue;
     text-decoration: none;
     font-size: 5rem;
+    font-weight: 800;
+    margin: 2%;
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     #divmain{
         display: grid;
         grid-template-rows: 15vh 75vh 75vh 40vh 15vh;
         grid-template-columns:100%;
-        row-gap: 10px;
-        column-gap: 10px;
         grid-template-areas: 
         'hd'
         'divBild'
-        'se'
+        'seS1'
         'divBild2'
         'ft';
     }
@@ -49,8 +54,6 @@
         display: grid;
         grid-template-rows: 15vh 5vh 90vh 5vh 90vh 5vh 90vh 5vh 15vh;
         grid-template-columns:5% 90% 5%;
-        row-gap: 10px;
-        column-gap: 10px;
         grid-template-areas: 
         'hd hd hd'
         '.. .. ..'
@@ -62,39 +65,87 @@
         '.. .. ..'
         'ft ft ft';
     }
+
+    .link{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin: 2%;
+    }    
     header{
         grid-area: hd;
-        text-align: center;
+        display: flex;
         color: aliceblue;
         background-color: darkolivegreen;
-        border-radius: 7px;
+       
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+        flex-wrap: nowrap;
+        align-items: center;
         
     }
     
 
      .menu-button i.material-icons{
-        display: none;
+        display: block;
        }
     #divBild{
         grid-area: divBild;
         text-align: center;
         font-size: 3.5rem;
         background-color: white;
-        border-radius: 7px;
+        background-image: url("../img/Mobil_Skogen_bra.png");
+       
+    
     }
     #divBild2{
         grid-area: divBild2;
         text-align: center;
         font-size: 3.5rem;
         background-color: white;
-        border-radius: 7px;
+      
     }
     #se{
         grid-area: se;
         text-align: center;
         background-color: darkkhaki;
+
+    }
+    #seS1{
+        grid-area: seS1;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: darkkhaki;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+    #artS1{
+        width: 94%;
+        height: 30vh;
+        background-color: darkolivegreen;
+        margin: 2%;
         border-radius: 7px;
     }
+    #art2S1{
+        width: 45%;
+        height: 30vh;
+        margin: 2%;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+    }
+    #art3S1{
+        width: 45%;
+        height: 30vh;
+        margin: 2%;
+        background-color: darkolivegreen;
+        border-radius: 7px;
+    }
+
     #se2{
         grid-area: se2;
         text-align: center;
@@ -112,28 +163,32 @@
         text-align: center;
         font-size: 3.5rem;
         background-color: darkolivegreen;
-        border-radius: 7px;
-    }  
+
+    } 
+    
+    
+    
 }@media screen and (min-width: 700px) {
 
     #divmain{
         display: grid;
-        grid-template-rows: 15vh 75vh 75vh 15vh;
+        grid-template-rows: 15vh 75vh 75vh 75vh 15vh;
         grid-template-columns:100%;
-        row-gap: 10px;
-        column-gap: 10px;
         grid-template-areas: 
         'hd'
         'divBild'
         'se'
+        'divBild2'
         'ft';
     }
     header{
         grid-area: hd;
-        text-align: center;
+        display: flex;
         color: aliceblue;
         background-color: darkolivegreen;
-        border-radius: 7px;
+        justify-content: left;
+        flex-wrap: nowrap;
+        align-items: center;
         
     }
     .menu-button i.material-icons{
@@ -144,19 +199,25 @@
         text-align: center;
         font-size: 3.5rem;
         background-image: url("../img/Skogen.png");
-        border-radius: 7px;
+    }
+    #divBild2{
+        grid-area: divBild2;
+        text-align: center;
+        font-size: 3.5rem;
+        background-image: url("../img/uniq-trek-bQYlRayXynE-unsplash.jpg");
     }
     #se{
         grid-area: se;
         text-align: center;
         background-color: darkkhaki;
-        border-radius: 7px;
     }
     #ft{
         grid-area: ft;
         text-align: center;
         font-size: 3.5rem;
         background-color: darkolivegreen;
-        border-radius: 7px;
     }  
+    #divmain2{
+        display: none;
+    }
 }

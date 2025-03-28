@@ -1,5 +1,7 @@
 body{
     margin: 0%;
+    background-color: #889e5f;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .menu-button{
@@ -30,7 +32,15 @@ body{
 .white{
 
     color: aliceblue;
+    margin: 3%;
 }
+.text{
+    color: aliceblue;
+    margin: 3%;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
 
 .link{
     color: aliceblue;
@@ -43,9 +53,10 @@ body{
 .small-link{
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
     margin: 7%;
+
 
 
 }
@@ -59,9 +70,112 @@ body{
     color: aliceblue;
     font-size: 2rem;
     font-weight: 800;
+    margin-top: 2%;
+    margin-bottom: 0%;
 }
 
-@media screen and (max-width: 600px) {
+#se{
+    grid-area: se;
+    background-color: darkolivegreen;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    justify-content: center;
+
+}
+#se2{
+    grid-area: se2;
+    background-color: darkolivegreen;;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#se3{
+    grid-area: se3;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#se4{
+    grid-area: se4;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.artic{
+    width: 30%;
+    height: 35vh;
+    background-color: darkolivegreen;
+    margin: 2%;
+    border-radius: 7px;
+}
+#lake1{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/slu-artdatabanken-sjoarochvattendrag-880x660.jpg");
+ 
+    margin: 2%;
+    border-radius: 7px;
+}
+#lake2{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/Holmevattnet.jpg");
+    margin: 2%;
+    border-radius: 7px;
+}
+
+#naturereserve{
+
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/natur.jpg");
+   
+    margin: 2%;
+    border-radius: 7px;
+}
+#naturereserve2{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/nature2.jpg");
+    margin: 2%;
+    border-radius: 7px;
+}
+#berg{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/berg.jpg");
+    margin: 2%;
+    border-radius: 7px;
+}
+.link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 2%;
+}   
+
+.small-link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 2%;
+
+
+}
+
+@media screen and (max-width: 500px) {
     #divmain{
         display: grid;
         grid-template-rows: 15vh 75vh 75vh 40vh 15vh;
@@ -75,7 +189,7 @@ body{
     }
     #divmain2{
         display: grid;
-        grid-template-rows: 15vh 5vh 90vh 5vh 90vh 5vh 90vh 5vh 15vh;
+        grid-template-rows: 15vh 10vh 90vh 10vh 90vh 10vh 90vh 10vh 15vh;
         grid-template-columns:5% 90% 5%;
         grid-template-areas: 
         'hd hd hd'
@@ -91,25 +205,27 @@ body{
     #divmain3{
         display: grid;
         grid-template-rows: 15vh 30vh 30vh 30vh 30vh 30vh 15vh;
-        grid-template-columns:25% 50% 25%;
+        grid-template-columns:30% 50% 20%;
         grid-template-areas: 
         'hd hd hd' 
-        'as .. ..'
+        'as titeldiv ..'
         'as at ..' 
-        'as .. ..'
+        'as titeldiv2 ..'
         'as at2 ..' 
-        'as .. ..'
+        'as titeldiv3 ..'
         'ft ft ft';
     }
-
-    .link{
-        color: aliceblue;
-        text-decoration: none;
-        font-size: 3.5rem;
-        font-weight: 800;
-        margin: 2%;
-    }    
-    header{
+    #divmain4{
+        display: grid;
+        grid-template-rows: 15vh 200vh 15vh;
+        grid-template-columns:100%;
+        grid-template-areas: 
+        'hd' 
+        'ma' 
+        'ft';
+    }
+ 
+    .hd{
         grid-area: hd;
         display: flex;
         color: aliceblue;
@@ -123,7 +239,9 @@ body{
         z-index: 12;
         
     }
-    
+    .menu-button{
+        margin-right: 27%;
+    }
 
      .menu-button i.material-icons{
         display: block;
@@ -134,13 +252,21 @@ body{
         font-size: 3.5rem;
         background-color: white;
         background-image: url("../img/Mobil_Skogen_bra.png");
-       
     
+    }
+    .link{
+        display: none;
     }
     #as{
         grid-area: as;
-        background-image: url("../img/Namnlös_design-removebg.png");
-
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        background-image: url("../img/Namnlös\ design.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 110% 80%;
+        
 
     }
     #divBild2{
@@ -150,50 +276,64 @@ body{
         background-color: white;
       
     }
-    #se{
-        grid-area: se;
-        text-align: center;
-        background-color: darkkhaki;
+    #titeldiv{
         display: flex;
-        flex-wrap: wrap;
-        border-radius: 7px;
-        justify-content: center;
-
-    }
-    #se2{
-        grid-area: se2;
+        grid-area: titeldiv;
         text-align: center;
-        background-color: darkkhaki;
-        border-radius: 7px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+        font-size: 3.5rem;
+        align-items: center;
+     
     }
-    #se3{
-        grid-area: se3;
+    #titeldiv2{
+        display: flex;
+        grid-area: titeldiv2;
         text-align: center;
-        background-color: darkkhaki;
-        border-radius: 7px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+        font-size: 3.5rem;
+        align-items: center;
+     
     }
+    #titeldiv3{
+        display: flex;
+        grid-area: titeldiv3;
+        text-align: center;
+        font-size: 3.5rem;
+       align-items: center;
+     
+    }
+   
     #seS1{
         grid-area: seS1;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
-        background-color: darkkhaki;
+        background-color: #889e5f;
         align-content: center;
         justify-content: center;
         
     }
-
+    #se4{
+        display: none;
+    }
     #ma{
         grid-area: ma;
-        background-color: darkkhaki;
+        background-color:#889e5f;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        color: aliceblue;;
+      
+    }
+
+    #questionsarticle{
+        width: 90%;
+        height: 120vh;
+        background-color: darkolivegreen;
+    }
+    #questionsarticle2{
+        width: 90%;
+        height: 50vh;
+        margin: 5%;
+        background-color: darkolivegreen;
     }
 
     #at{
@@ -203,13 +343,6 @@ body{
         text-align: center;
     }
 
-    .artic{
-        width: 40%;
-        height: 30vh;
-        background-color: darkolivegreen;
-        margin: 2%;
-        border-radius: 7px;
-    }
 
     #at2{
         grid-area: at2;
@@ -247,20 +380,16 @@ body{
         background-color: darkolivegreen;
 
     } 
-    .small-link{
-        color: aliceblue;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-weight: 800;
-        margin: 3%;
-    
-    
+    #divmaincomputer2{
+        display: none;
+    }
+
+    #title-se{
+        display: none;
     }
     
     
-    
-    
-}@media screen and (min-width: 700px) {
+}@media screen and (min-width: 501px) {
 
     #divmain{
         display: grid;
@@ -273,7 +402,43 @@ body{
         'divBild2'
         'ft';
     }
-    header{
+    #divmain2{
+        display: grid;
+        grid-template-rows: 15vh 10vh 90vh 10vh 90vh 10vh 15vh;
+        grid-template-columns:2.5% 46.25% 2.5% 46.25% 2.5%;
+        grid-template-areas: 
+        'hd hd hd hd hd'
+        '.. .. .. .. ..'
+        '.. se .. se2 ..' 
+        '.. .. .. .. ..'
+        '.. se3 .. se4 ..' 
+        '.. .. .. .. ..'
+        'ft ft ft ft ft';
+    }
+    #divmain3{
+        display: grid;
+        grid-template-rows: 15vh 30vh 30vh 30vh 30vh 30vh 15vh;
+        grid-template-columns:30% 50% 20%;
+        grid-template-areas: 
+        'hd hd hd' 
+        'as titeldiv ..'
+        'as at ..' 
+        'as titeldiv2 ..'
+        'as at2 ..' 
+        'as titeldiv3 ..'
+        'ft ft ft';
+    }
+    #divmain4{
+        display: grid;
+        grid-template-rows: 15vh 10vh 200vh 15vh;
+        grid-template-columns:100%;
+        grid-template-areas: 
+        'hd' 
+        'tse' 
+        'ma' 
+        'ft';
+    }
+   .hd{
         grid-area: hd;
         display: flex;
         text-align: center;
@@ -284,6 +449,26 @@ body{
         align-items: center;
         z-index: 12;
         
+    }
+    
+    #questionsarticle{
+        width: 50%;
+        height: 120vh;
+        background-color: darkolivegreen;
+        margin: 2%;
+    }
+    #title-se{
+        grid-area: tse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #questionsarticle2{
+        width: 28%;
+        height: 120vh;
+        margin: 2%;
+        background-color: darkolivegreen;
     }
     .menu-button i.material-icons{
         display: block;
@@ -302,8 +487,8 @@ body{
     }
     #se{
         grid-area: se;
-        text-align: center;
-        background-color: darkkhaki;
+        
+        background-color: darkolivegreen;
     }
     #ft{
         grid-area: ft;
@@ -311,7 +496,24 @@ body{
         font-size: 3.5rem;
         background-color: darkolivegreen;
     }  
-    #divmain2{
-        display: none;
+    #ma{
+        grid-area: ma;
+        background-color:#889e5f;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        color: aliceblue;;
+      
     }
+    .section-title2{
+        margin: 10%;
+        color: aliceblue;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+    
+   
 }

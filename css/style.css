@@ -1,7 +1,7 @@
 body{
     margin: 0%;
-    background-color: #889e5f;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
 }
 
 .menu-button{
@@ -16,6 +16,40 @@ body{
     font-size: 2.5rem;
     z-index: 1000;
 }
+form{
+    margin: 2%;
+
+}
+.margintop{
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+input{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+textarea{
+    margin-top: 1%;
+    margin-bottom: 0%;
+    height: 20vh;
+    width: 98%;
+}
+label{
+    font-family: "Nunito", sans-serif;
+}
+.skicka{
+    background-color: #889e5f;
+    color: aliceblue;
+    height: 6vh;
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+}
+
+
 .menu{
     height: 10vh;
     width: 100%;
@@ -35,9 +69,9 @@ body{
     margin: 3%;
 }
 .text{
-    color: aliceblue;
+   
     margin: 3%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 550;
 }
 
@@ -121,7 +155,7 @@ body{
 #lake1{
     width: 58%;
     height: 33vh;
-    background-image: url("../img/slu-artdatabanken-sjoarochvattendrag-880x660.jpg");
+    background-image: url("../img/lake1.jpg");
  
     margin: 2%;
     border-radius: 7px;
@@ -129,9 +163,11 @@ body{
 #lake2{
     width: 58%;
     height: 33vh;
-    background-image: url("../img/Holmevattnet.jpg");
+    background-image: url("../img/lake2.jpg");
     margin: 2%;
     border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #naturereserve{
@@ -149,6 +185,8 @@ body{
     background-image: url("../img/nature2.jpg");
     margin: 2%;
     border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #berg{
     width: 58%;
@@ -156,6 +194,33 @@ body{
     background-image: url("../img/berg.jpg");
     margin: 2%;
     border-radius: 7px;
+}
+#berg2{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/berg2.jpg");
+    margin: 2%;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#monument{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/monument1.jpg");
+    margin: 2%;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#monument2{
+    width: 58%;
+    height: 33vh;
+    background-image: url("../img/monument2.jpg");
+    margin: 2%;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .link{
     color: aliceblue;
@@ -171,14 +236,115 @@ body{
     font-size: 1.2rem;
     font-weight: 800;
     margin: 2%;
+}
+.big{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 2%;
+}
+.timetabletext{
+    margin: 0%;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.timetablesmall{
+    margin: 0%;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.timetabletitel{
+    margin: 1%;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#titeldiv{
+    display: flex;
+    grid-area: titeldiv;
+    text-align: center;
+    font-size: 3.5rem;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#titeldiv2{
+    display: flex;
+    grid-area: titeldiv2;
+    text-align: center;
+    font-size: 3.5rem;
+    align-items: center;
+    justify-content: center;
+}
+#titeldiv3{
+    display: flex;
+    grid-area: titeldiv3;
+    text-align: center;
+    font-size: 3.5rem;
+   align-items: center;
+   justify-content: center;
+ 
+}
+#at{
+    grid-area: at;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    text-align: center;
+}
 
 
+#at2{
+    grid-area: at2;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    text-align: center;
+}
+#title-se{
+    grid-area: tse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#questionsarticle{
+    margin: 2%;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    grid-area: q1;
+    color: aliceblue;
+}
+#questionsarticle2{
+    margin: 2%;
+    background-color: darkolivegreen;
+    border-radius: 7px;
+    grid-area: q2;
+    color: aliceblue;
+}
+.hd{
+    grid-area: hd;
+    display: flex;
+    color: aliceblue;
+    background-color: darkolivegreen;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    justify-content: left;
+    flex-wrap: nowrap;
+    align-items: center;
+    z-index: 12;
+    
+}
+#sec{
+    grid-area: sec;
+    margin: 2%;
 }
 
 @media screen and (max-width: 500px) {
     #divmain{
         display: grid;
-        grid-template-rows: 15vh 75vh 75vh 40vh 15vh;
+        grid-template-rows: 15vh 75vh 90vh 40vh 15vh;
         grid-template-columns:100%;
         grid-template-areas: 
         'hd'
@@ -189,11 +355,12 @@ body{
     }
     #divmain2{
         display: grid;
-        grid-template-rows: 15vh 10vh 90vh 10vh 90vh 10vh 90vh 10vh 15vh;
+        grid-template-rows: 15vh 5vh 55vh 90vh 10vh 90vh 10vh 90vh 10vh 15vh;
         grid-template-columns:5% 90% 5%;
         grid-template-areas: 
         'hd hd hd'
         '.. .. ..'
+        'sec sec sec'
         '.. se ..' 
         '.. .. ..'
         '.. se2 ..' 
@@ -204,41 +371,35 @@ body{
     }
     #divmain3{
         display: grid;
-        grid-template-rows: 15vh 30vh 30vh 30vh 30vh 30vh 15vh;
+        grid-template-rows: 15vh 5vh 60vh 25vh 40vh 25vh 40vh 25vh 5vh 15vh;
         grid-template-columns:30% 50% 20%;
         grid-template-areas: 
         'hd hd hd' 
+        '.. .. ..'
+        'sec sec sec'
         'as titeldiv ..'
         'as at ..' 
         'as titeldiv2 ..'
         'as at2 ..' 
         'as titeldiv3 ..'
+        '.. .. ..'
         'ft ft ft';
     }
     #divmain4{
         display: grid;
-        grid-template-rows: 15vh 200vh 15vh;
-        grid-template-columns:100%;
+        grid-template-rows: 15vh 5vh 20vh 20vh 75vh 65vh 10vh 15vh;
+        grid-template-columns: 100%;
         grid-template-areas: 
         'hd' 
-        'ma' 
+        '..'
+        'tse'
+        'sec'
+        'q1' 
+        'q2'
+        '..'
         'ft';
     }
  
-    .hd{
-        grid-area: hd;
-        display: flex;
-        color: aliceblue;
-        background-color: darkolivegreen;
-        text-align: center;
-        margin: 0%;
-        padding: 0%;
-        justify-content: left;
-        flex-wrap: nowrap;
-        align-items: center;
-        z-index: 12;
-        
-    }
     .menu-button{
         margin-right: 27%;
     }
@@ -254,6 +415,14 @@ body{
         background-image: url("../img/Mobil_Skogen_bra.png");
     
     }
+    #divBild2{
+        grid-area: divBild;
+        text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        background-image: url("../img/lake_picture_bra2.jpg");
+    
+    }
     .link{
         display: none;
     }
@@ -262,10 +431,10 @@ body{
         text-align: center;
         font-size: 3.5rem;
         background-color: white;
-        background-image: url("../img/Namnlös\ design.png");
+        background-image: url("../img/resor.png");
         background-position: left;
         background-repeat: no-repeat;
-        background-size: 110% 80%;
+        background-size: 115% 97%;
         
 
     }
@@ -276,38 +445,14 @@ body{
         background-color: white;
       
     }
-    #titeldiv{
-        display: flex;
-        grid-area: titeldiv;
-        text-align: center;
-        font-size: 3.5rem;
-        align-items: center;
-     
-    }
-    #titeldiv2{
-        display: flex;
-        grid-area: titeldiv2;
-        text-align: center;
-        font-size: 3.5rem;
-        align-items: center;
-     
-    }
-    #titeldiv3{
-        display: flex;
-        grid-area: titeldiv3;
-        text-align: center;
-        font-size: 3.5rem;
-       align-items: center;
-     
-    }
+    
    
     #seS1{
         grid-area: seS1;
         display: flex;
         flex-wrap: wrap;
-        background-color: #889e5f;
-        align-content: center;
-        justify-content: center;
+        
+        
         
     }
     #se4{
@@ -315,78 +460,40 @@ body{
     }
     #ma{
         grid-area: ma;
-        background-color:#889e5f;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        color: aliceblue;;
-      
     }
 
-    #questionsarticle{
-        width: 90%;
-        height: 120vh;
-        background-color: darkolivegreen;
-    }
-    #questionsarticle2{
-        width: 90%;
-        height: 50vh;
-        margin: 5%;
-        background-color: darkolivegreen;
-    }
-
-    #at{
-        grid-area: at;
-        background-color: darkolivegreen;
-        border-radius: 7px;
-        text-align: center;
-    }
-
-
-    #at2{
-        grid-area: at2;
-        background-color: darkolivegreen;
-        border-radius: 7px;
-        text-align: center;
-    }
 
     #artS1{
         width: 94%;
         height: 30vh;
-        background-color: darkolivegreen;
         margin: 2%;
         border-radius: 7px;
     }
     #art2S1{
-        width: 45%;
+        width: 94%;
         height: 30vh;
         margin: 2%;
-        background-color: darkolivegreen;
         border-radius: 7px;
     }
-    #art3S1{
-        width: 45%;
-        height: 30vh;
-        margin: 2%;
-        background-color: darkolivegreen;
-        border-radius: 7px;
-    }
+
 
     #ft{
         grid-area: ft;
         text-align: center;
         font-size: 3.5rem;
         background-color: darkolivegreen;
+        color: white;
 
     } 
     #divmaincomputer2{
         display: none;
     }
 
-    #title-se{
-        display: none;
-    }
+   
     
     
 }@media screen and (min-width: 501px) {
@@ -404,11 +511,11 @@ body{
     }
     #divmain2{
         display: grid;
-        grid-template-rows: 15vh 10vh 90vh 10vh 90vh 10vh 15vh;
+        grid-template-rows: 15vh 35vh 90vh 10vh 90vh 10vh 15vh;
         grid-template-columns:2.5% 46.25% 2.5% 46.25% 2.5%;
         grid-template-areas: 
         'hd hd hd hd hd'
-        '.. .. .. .. ..'
+        'sec sec sec sec sec'
         '.. se .. se2 ..' 
         '.. .. .. .. ..'
         '.. se3 .. se4 ..' 
@@ -417,59 +524,58 @@ body{
     }
     #divmain3{
         display: grid;
-        grid-template-rows: 15vh 30vh 30vh 30vh 30vh 30vh 15vh;
-        grid-template-columns:30% 50% 20%;
+        grid-template-rows: 15vh 40vh 30vh 20vh 20vh 10vh 15vh;
+        grid-template-columns:24% 14% 24% 14% 24%;
         grid-template-areas: 
-        'hd hd hd' 
-        'as titeldiv ..'
-        'as at ..' 
-        'as titeldiv2 ..'
-        'as at2 ..' 
-        'as titeldiv3 ..'
-        'ft ft ft';
+        'hd hd hd hd hd' 
+        'sec sec sec sec sec'
+        'bild bild bild bild bild' 
+        'titeldiv3 at2 titeldiv2 at titeldiv'
+        '.. at2 .. at..'
+        '.. .. .. .. ..'
+        'ft ft ft ft ft';
     }
     #divmain4{
         display: grid;
-        grid-template-rows: 15vh 10vh 200vh 15vh;
-        grid-template-columns:100%;
+        grid-template-rows: 15vh 5vh 15vh 20vh 5vh 70vh 10vh 15vh;
+        grid-template-columns: 60% 40%;
         grid-template-areas: 
-        'hd' 
-        'tse' 
-        'ma' 
-        'ft';
-    }
-   .hd{
-        grid-area: hd;
-        display: flex;
-        text-align: center;
-        color: aliceblue;
-        background-color: darkolivegreen;
-        justify-content: left;
-        flex-wrap: nowrap;
-        align-items: center;
-        z-index: 12;
-        
+        'hd hd' 
+        '.. ..' 
+        'tse tse' 
+        'sec sec'
+        '.. ..' 
+        'q1 q2' 
+        '.. ..'
+        'ft ft';
     }
     
     #questionsarticle{
-        width: 50%;
-        height: 120vh;
         background-color: darkolivegreen;
-        margin: 2%;
+        margin: 1%;
+        border-radius: 7px;
+        grid-area: q1;
+        color: aliceblue;
     }
-    #title-se{
-        grid-area: tse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #bild{
+        grid-area: bild;
         text-align: center;
+        font-size: 3.5rem;
+        background-color: white;
+        background-image: url("../img/Resordator.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100% 120% ;
+        
     }
-    #questionsarticle2{
-        width: 28%;
-        height: 120vh;
-        margin: 2%;
-        background-color: darkolivegreen;
-    }
+   #as{
+    display: none;
+   }
+    
+   #lake1{
+    background-image: url("../img/lake1dator.jpg");
+}
+
     .menu-button i.material-icons{
         display: block;
      }
@@ -487,7 +593,6 @@ body{
     }
     #se{
         grid-area: se;
-        
         background-color: darkolivegreen;
     }
     #ft{
@@ -495,6 +600,7 @@ body{
         text-align: center;
         font-size: 3.5rem;
         background-color: darkolivegreen;
+        color: aliceblue;
     }  
     #ma{
         grid-area: ma;
@@ -503,11 +609,11 @@ body{
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        color: aliceblue;;
+        color: aliceblue;
       
     }
     .section-title2{
-        margin: 10%;
+        margin-left: 40%;
         color: aliceblue;
         font-size: 2rem;
         font-weight: 800;
